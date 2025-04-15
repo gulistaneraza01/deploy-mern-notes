@@ -7,7 +7,7 @@ Vercel json config for express backend
     "version": 2,
     "builds": [
         {
-            "src": "server.js",
+            "src": "index.js",
             "use": "@vercel/node",
             "config": {
                 "includeFiles": [
@@ -19,7 +19,7 @@ Vercel json config for express backend
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "server.js"
+            "dest": "index.js"
         }
     ]
 }
